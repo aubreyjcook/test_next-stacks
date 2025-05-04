@@ -25,7 +25,7 @@ importers:
         version: 15.3.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       next-shadcn:
         specifier: 'file:'
-        version: 'file:'
+        version: file:(@types/react@19.1.2)
       react:
         specifier: ^19.0.0
         version: 19.1.0
@@ -3162,8 +3162,9 @@ snapshots:
 
   natural-compare@1.4.0: {}
 
-  'next-shadcn@file:':
+  next-shadcn@file:(@types/react@19.1.2):
     dependencies:
+      '@radix-ui/react-slot': 1.2.0(@types/react@19.1.2)(react@19.1.0)
       class-variance-authority: 0.7.1
       clsx: 2.1.1
       lucide-react: 0.503.0(react@19.1.0)
@@ -3175,6 +3176,7 @@ snapshots:
       - '@babel/core'
       - '@opentelemetry/api'
       - '@playwright/test'
+      - '@types/react'
       - babel-plugin-macros
       - babel-plugin-react-compiler
       - sass
